@@ -15,13 +15,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { Octicons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 
-const MAIN_COLOR = "#232329";
-const SECONDARY_COLOR = "#F4F4FB";
-const ACCENT_COLOR = "#101213";
-
-// const MAIN_COLOR = "#F4F4FB";
-// const SECONDARY_COLOR = "#232329";
-// const ACCENT_COLOR = "#D6D6DF";
+import Colors from "../elements/Colors";
 
 export function HomeScreen() {
   return (
@@ -277,7 +271,7 @@ export function HomeScreen() {
 const mainStyle = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: MAIN_COLOR,
+    backgroundColor: Colors.MAIN_COLOR,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
 });
@@ -302,7 +296,7 @@ const commonStyle = StyleSheet.create({
     margin: 10,
     fontSize: 20,
     fontWeight: "700",
-    color: SECONDARY_COLOR,
+    color: Colors.SECONDARY_COLOR,
   },
 });
 
@@ -314,7 +308,7 @@ const headerSectionStyle = StyleSheet.create({
     paddingBottom: 5,
     fontSize: 23,
     fontWeight: "bold",
-    color: SECONDARY_COLOR,
+    color: Colors.SECONDARY_COLOR,
   },
   quoteTest: {
     textAlign: "center",
@@ -324,7 +318,7 @@ const headerSectionStyle = StyleSheet.create({
     fontSize: 15,
     margin: 10,
     marginTop: 0,
-    color: SECONDARY_COLOR,
+    color: Colors.SECONDARY_COLOR,
   },
 });
 
@@ -341,7 +335,7 @@ const quickActionStyle = StyleSheet.create({
   component: {
     flex: 1,
     justifyContent: "space-evenly",
-    borderColor: ACCENT_COLOR,
+    borderColor: Colors.ACCENT_COLOR,
     alignItems: "center",
     textAlign: "center",
     borderWidth: 1,
@@ -349,18 +343,18 @@ const quickActionStyle = StyleSheet.create({
     margin: 6,
     marginTop: 4,
     marginBottom: 4,
-    backgroundColor: ACCENT_COLOR,
+    backgroundColor: Colors.ACCENT_COLOR,
   },
 
   icons: {
-    color: SECONDARY_COLOR,
+    color: Colors.SECONDARY_COLOR,
     alignSelf: "center",
     marginBottom: 6,
   },
 
   textFormat: {
     textAlign: "center",
-    color: SECONDARY_COLOR,
+    color: Colors.SECONDARY_COLOR,
     fontSize: 13,
   },
 });
@@ -369,7 +363,7 @@ const logViewStyle = StyleSheet.create({
   logArea: {
     fontSize: 11,
     fontFamily: Platform.OS === "android" ? "monospace" : "Menlo-Bold",
-    color: SECONDARY_COLOR,
+    color: Colors.SECONDARY_COLOR,
   },
   scrollArea: {
     margin: 8,
@@ -392,7 +386,7 @@ const notificationAreaStyle = StyleSheet.create({
     marginTop: 1,
     width: "90%",
     borderRadius: 8,
-    backgroundColor: ACCENT_COLOR,
+    backgroundColor: Colors.ACCENT_COLOR,
   },
 
   notificationEntryTitle: {
@@ -401,19 +395,19 @@ const notificationAreaStyle = StyleSheet.create({
     margin: 8,
     marginBottom: 4,
     textAlign: "left",
-    color: SECONDARY_COLOR,
+    color: Colors.SECONDARY_COLOR,
   },
   notificationEntryContent: {
     fontSize: 14,
     textAlign: "justify",
     marginLeft: 8,
     marginRight: 8,
-    color: SECONDARY_COLOR,
+    color: Colors.SECONDARY_COLOR,
   },
   notificationEntryMeta: {
     fontSize: 10,
     textAlign: "right",
     margin: 8,
-    color: SECONDARY_COLOR,
+    color: Colors.SECONDARY_COLOR,
   },
 });
